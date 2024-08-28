@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  div[class*="test"] {
+    color: red;
+  }
+  div[class~="test"] {
+    background-color: yellow;
+  }
+</style>
+<body>
+  <div class="first_test">first_test</div>
+  <div class="first-test test">first_test test</div>
+  <div class="second">second</div>
+  <div class="test">test</div>
+  <p class="test">p test</p>
+</body>
+</html>
