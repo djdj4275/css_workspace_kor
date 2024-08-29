@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  input:enabled+span {
+    color: blue;
+  }
+  input:checked+span {
+    color: red;
+  }
+  input:disabled+span {
+    color: grey;
+    text-decoration: line-through;
+  }
+</style>
+<body>
+  <input type="radio" name="gender" /> <span>Male</span>
+  <input type="radio" name="gender" /> <span>Female</span>
+  <input type="radio" name="gender" disabled /> <span>Neuter</span>
+  <input type="checkbox" name="gender" /> <span>Male</span>
+  <input type="checkbox" name="gender" /> <span>Female</span>
+  <input type="checkbox" name="gender" disabled /> <span>Neuter</span>
+</body>
+</html>
